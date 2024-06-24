@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Evaluation_rattrapage.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Rechercher le nombre d'enfants nés avec un prénom à Nantes"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Entry x:Name="PrenomEntry"
+               Placeholder="Entrez un prénom"
+               HorizontalOptions="FillAndExpand" />
+
+        <Picker x:Name="AnneePicker"
+                Title="Sélectionnez une année"
+                HorizontalOptions="FillAndExpand" />
+
+        <Button Text="Rechercher"
+                Clicked="OnRechercherClicked"
+                HorizontalOptions="Center" />
+
+        <Label x:Name="ResultatLabel"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
